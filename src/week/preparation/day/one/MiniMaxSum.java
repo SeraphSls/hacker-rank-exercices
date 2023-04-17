@@ -27,9 +27,11 @@ public class MiniMaxSum {
         }
 
 
+        //faço a soma minima tirando o maior que é o ultimo da lista (exemplo : array de 1,2,3,4,5  tira o 5 e soma o resto).
         for (int i = 0; i < arr.size() - 1; i++) {
             sumMin = sumMin + arr.get(i);
         }
+        // faço a soma maior tirando o menor da lista ( exemplo : array de 1,2,3,4,5  tira o 1 e soma o resto).
         for (int i = 1; i < arr.size(); i++) {
             sumMax = sumMax + arr.get(i);
         }
